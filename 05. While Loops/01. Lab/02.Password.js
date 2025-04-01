@@ -1,12 +1,13 @@
 function password(input) {
     let username = input[0];
     let password = input[1];
-    let inputPassword = input[2];
-    let index = 3;
+    
+    let index = 2;
+    let inputPassword = input[index];
 
     while (inputPassword !== password) {
-        inputPassword = input[index];
         index++;
+        inputPassword = input[index];
     }
 
     console.log(`Welcome ${username}!`);
