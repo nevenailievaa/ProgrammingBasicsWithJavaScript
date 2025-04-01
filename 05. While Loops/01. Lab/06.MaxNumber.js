@@ -1,6 +1,6 @@
 function maxNumber(inputArray) {
-    let input = inputArray[0];
-    let index = 1;
+    let index = 0;
+    let input = inputArray[index];
     let maxNum = Number.MIN_SAFE_INTEGER;
 
     while (input !== "Stop") {
@@ -10,8 +10,8 @@ function maxNumber(inputArray) {
             maxNum = currentNum;
         }
 
-        input = inputArray[index];
         index++;
+        input = inputArray[index];
     }
     console.log(maxNum);
 }
